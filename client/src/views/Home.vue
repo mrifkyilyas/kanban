@@ -63,6 +63,7 @@ leadsRef.on('value', function (snapshot) {
       const obj = childSnapshot.val()
       obj.id = childSnapshot.key
       taskData[3].data.push(obj)
+     
     }
   })
 })

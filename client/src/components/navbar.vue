@@ -23,7 +23,7 @@
     
             <!-- Modal Header -->
             <div class="modal-header">
-              <h4 class="modal-title">Modal Heading</h4>
+              <h4 class="modal-title">Add New </h4>
               <button type="button" class="close" data-dismiss="modal">&times;</button>
             </div>
     
@@ -41,7 +41,7 @@
     
             <!-- Modal footer -->
             <div class="modal-footer">
-              <button type="button" class="btn btn-info" @click="sendItem">Add</button>
+              <button type="button" class="btn btn-info" @click="sendItem">Add New</button>
               <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
             </div>
     
@@ -57,7 +57,7 @@
 import database from '@/api/config.js'
 
 export default {
-  name: 'MainHeader',
+  name: 'navbar',
   data () {
     return {
       taskName: '',
@@ -68,7 +68,7 @@ export default {
     sendItem () {
       database.ref('/').push({
         title: this.taskName,
-        descrip : this.description,
+        descrip: this.description,
         status: 'BackLog'
       })
       this.taskName = ''
