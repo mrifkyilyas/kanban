@@ -70,10 +70,10 @@ export default {
        this.template = `max-width: 18rem; background:#8c7ae6; `
       
     } else if (this.name === 'OnGoing') {
-      this.buttonOne = 'Finished'
-      this.buttonTwo = 'ToDo'
-      this.designOne =`background:#44bd32; color:white;`
-      this.designTwo = `background:#8c7ae6; color:white;`
+      this.buttonTwo = 'Finished'
+      this.buttonOne = 'ToDo'
+      this.designTwo =`background:#44bd32; color:white;`
+      this.designOne = `background:#8c7ae6; color:white;`
        this.template = `max-width: 18rem; background:#e1b12c; `
     } else if (this.name === 'Finished') {
       this.buttonOne = 'OnGoing'
